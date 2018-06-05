@@ -170,8 +170,8 @@
 #define AX_START                    255
 #define AX_CCW_AL_L                 255 
 #define AX_CCW_AL_H                 3
-#define TIME_OUT                    10         // Este parametro depende de la velocidad de transmision
-#define TX_DELAY_TIME				200        // Este parametro depende de la velocidad de transmision - pero pueden ser cambiados para mayor velocidad.
+#define TIME_OUT                    20         // Este parametro depende de la velocidad de transmision
+#define TX_DELAY_TIME				50        // Este parametro depende de la velocidad de transmision - pero pueden ser cambiados para mayor velocidad.
 #define Tx_MODE                     1
 #define Rx_MODE                     0
 #define LOCK                        1

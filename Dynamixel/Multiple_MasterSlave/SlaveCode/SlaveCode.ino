@@ -18,8 +18,8 @@ SoftwareSerial BTSerial(10, 11); //Rx, Tx
 // String inString = "";    // string to hold input
 
 // Motor Id
-const int dofNb = 5;
-const int id[dofNb] = {1, 2, 3, 4, 5};
+const int dofNb = 7;
+const int id[dofNb] = {0, 1, 2, 3, 4, 5, 6};
 
 // Data serialization variables
 const int NUMBER_OF_FIELDS = dofNb; // how many comma separated fields we expect

@@ -21,8 +21,8 @@
 SoftwareSerial BTSerial(10, 11); //Rx, Tx
 
 // Motor Id
-const int dofNb = 5;
-const int id[dofNb] = {1, 2, 3, 4, 5};
+const int dofNb = 7;
+const int id[dofNb] = {0, 1, 2, 3, 4, 5, 6};
 
 // Data serialization variables
 const int NUMBER_OF_FIELDS = dofNb; // how many comma separated fields we expect
@@ -64,13 +64,12 @@ void loop() {
     pos[i] = Dynamixel.readPosition(id[i]); // Read position of the master AX-12
   }
 
-  delay(200);
+  delay(50);
 
   message = serialize(pos, dofNb);
   
   BTSerial.print(message); // Send position information to the slave AX-12
-//  BTSerial.print("\n");
-  //delay (20);
+
 }
 
 
